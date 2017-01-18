@@ -8,7 +8,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+<a href="private/insertform.do">새글쓰기</a>
 <h3>글 목록</h3>
 <table>
 	<thead>
@@ -16,6 +16,7 @@
 			<th>글번호</th>
 			<th>제목</th>
 			<th>작성자</th>
+			<!-- <th>조회수</th> -->
 			<th>등록일</th>
 		</tr>
 	</thead>
@@ -25,7 +26,7 @@
 				<td>${tmp.num }</td>
 				<td><a href="detail.do?num=${tmp.num }">${tmp.title }</a></td>
 				<td>${tmp.writer }</td>
-				<%-- //<td>${tmp.viewCount }</td> --%>
+				<%-- <td>${tmp.viewCount }</td> --%>
 				<td>${tmp.regdate }</td>
 			</tr>
 		</c:forEach>		

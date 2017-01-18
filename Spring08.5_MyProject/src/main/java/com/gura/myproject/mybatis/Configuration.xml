@@ -7,6 +7,7 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 	<typeAliases>
 		<typeAlias type="com.gura.myproject.file.dto.FileDto" alias="fileDto"/>
 		<typeAlias type="com.gura.myproject.cafe.dto.CafeDto" alias="cafeDto"/>
+		<typeAlias type="com.gura.myproject.users.dto.UsersDto" alias="usersDto"/>
 	</typeAliases>
 	
 	
@@ -15,6 +16,7 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 	<mappers>
 		<mapper resource="com/gura/myproject/mybatis/FileMapper.xml"/>
 		<mapper resource="com/gura/myproject/mybatis/CafeMapper.xml"/>
+		<mapper resource="com/gura/myproject/mybatis/UsersMapper.xml"/>
 	</mappers>
 </configuration>
 

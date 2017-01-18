@@ -23,5 +23,12 @@ public class CafeController {
 		mView.setViewName("cafe/list");
 		return mView;
 	}
+	
+	// cafe/private/insertform.do 요청처리
+		@RequestMapping("/cafe/private/insertform")
+		public String insertform(){
+			
+			return "cafe/private/insertform";
+		}
 
 }
