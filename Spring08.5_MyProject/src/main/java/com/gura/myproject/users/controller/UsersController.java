@@ -37,5 +37,23 @@ public class UsersController {
 		
 	}
 	
+	@RequestMapping("users/signout.do")
+	public ModelAndView signout(HttpServletRequest request, @ModelAttribute UsersDto dto){
+		
+		ModelAndView mView = UsersServiceImpl.isValid(request, dto);
+		
+		
+		if(mView==null){
+			
+			return mView;
+		}else{
+			return mView;
+		}
+		
+		
+				
+		
+	}
+	
 	
 }
